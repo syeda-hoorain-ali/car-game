@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway&family=Source+Sans+3&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.hide {
+    display: none;
+}
+
+.carGame {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(187, 217, 221);
+    background-image: url('./assets/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.car, .enemy {
+    width: 50px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 120px;
+    border: 2px solid #000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: url('./assets/images/car.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.enemy {
+    rotate: 180deg;
+}
+
+.gameArea {
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    background-color: #2d3436;
+    border-left: 7px dashed #abb0b4;
+    border-right: 7px dashed #abb0b4;
+    position: relative;
+    overflow: hidden;
+}  
+
+.lines {
+    width: 10px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    margin-left: 195px;
+}
+
+.score {
+    width: 300px;
+    line-height: 70px;
+    color: white;
+    background-color: #10ac84;
+    font-size: 1.5rem;    
+    text-align: center;
+    box-shadow: 0 5px 5px #777;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.startScreen {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    color: white;
+    background-color: #ee5253;
+    border: 1px solid #ff6b6b;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5;
+    word-spacing: 3;
+    line-height: 30px;
+    box-shadow: 0 5px 5px #777;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+}
